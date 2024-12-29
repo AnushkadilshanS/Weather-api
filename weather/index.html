@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FlashWeather - Get accurate and up-to-date weather information and forecasts.">
+    <meta name="author" content="FlashWeather">
+    <title>FlashWeather | Your Weather Companion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">FlashWeather</a></div>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="weather-app">
+            <h1>Weather App</h1>
+            <p>FlashWeather is your trusted weather companion, delivering real-time weather updates and accurate forecasts for cities around the world. Whether you're planning your day or preparing for a journey, FlashWeather ensures you have all the weather information you need, right at your fingertips.</p>
+            <div class="input-container">
+                <input type="text" id="locationInput" placeholder="Enter a city" aria-label="City name">
+                <button id="searchButton" aria-label="Search weather">Search</button>
+            </div>
+            <div class="weather-info">
+                <h2 id="location"></h2>
+                <p id="temperature"></p>
+                <p id="description"></p>
+                <div class="conversion-container">
+                    <button id="convertButton">Convert to Fahrenheit</button>
+                    <p id="fahrenheitOutput"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Forecast Section -->
+        <section class="forecast">
+            <h2>4-Day Forecast</h2>
+            <div id="forecastContainer" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 FlashWeather. All rights reserved. | <a href="terms.html">Terms of Service</a> | <a href="privacy-policy.html">Privacy Policy</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
